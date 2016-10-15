@@ -13,4 +13,14 @@
         <property name="password" value="<password>"/>
     </bean>
 
+    <!-- TokenUtil -->
+    <bean id="tokenUtil" class="net.swmaestro.portal.auth.TokenUtil">
+        <property name="secret" value="<secretkey>" />
+    </bean>
+
+    <!-- AttachmentUtil -->
+    <bean id="attachmentUtil" class="net.swmaestro.portal.attachment.util.AttachmentUtil">
+        <property name="filePath" value="<filepath>" />
+    </bean>
+
 </beans>
